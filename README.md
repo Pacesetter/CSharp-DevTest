@@ -3,12 +3,13 @@ A short c# coding challenge to access a developer's ability to code to a provide
 
 ## What You're Trying To Do
 The task is to write a clean, easy-to-read console application. This console application should convert each pressure data string in Pressure_As_ADC_Data_Strings.txt into a voltage, then into kPa using the information, data structure breakdown and formulas found below.
-⋅⋅*Pressure_As_ADC_Data_Strings.txt contains the pressure data strings.
-⋅⋅*Pressure_As_Voltages.txt is where the voltages are to be written to, at the precision of 5 decimal places. One value per line.
-⋅⋅*Pressure_As_kPa.txt is where the final pressure values in kPa are to be written to, at the precision of 2 decimal places. One value per line.
+*Pressure_As_ADC_Data_Strings.txt contains the pressure data strings.
+*Pressure_As_Voltages.txt is where the voltages are to be written to, at the precision of 5 decimal places. One value per line.
+*Pressure_As_kPa.txt is where the final pressure values in kPa are to be written to, at the precision of 2 decimal places. One value per line.
 
 ### Pressure ADC Data Strings To Integer Conversion
 The following is how the string input is converted to a pressure voltage for use:
+
 String input is \7 characters:  <SEQUENCE NUMBER><\20 BIT PRESSURE DATA AS 5 CHARACTERS><CR>
 So, if the string value is 0FFFF, and the Sequence Number is 0, the output is 00FFFFCR
 So, data range is:
