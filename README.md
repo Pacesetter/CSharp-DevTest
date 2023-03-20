@@ -2,11 +2,11 @@
 A short c# coding challenge to access a developer's ability to code to a provided specification.
 
 ## What You're Trying To Do
-The task is to write a clean, easy-to-read console application. This console application should convert each pressure data string in Pressure_As_ADC_Data_Strings.txt into a voltage, then into kPa using the information, data structure breakdown and formulas found below.
+The task is to write a clean, easy-to-read console application. This console application should convert each pressure data string in `Pressure_As_ADC_Data_Strings.txt` into a voltage, then into kPa using the information, data structure breakdown and formulas found below.
 
-*Pressure_As_ADC_Data_Strings.txt contains the pressure data strings.
-*Pressure_As_Voltages.txt is where the voltages are to be written to, at the precision of 5 decimal places. One value per line.
-*Pressure_As_kPa.txt is where the final pressure values in kPa are to be written to, at the precision of 2 decimal places. One value per line.
+* `Pressure_As_ADC_Data_Strings.txt` contains the pressure data strings.
+* `Pressure_As_Voltages.txt` is where the voltages are to be written to, at the precision of 5 decimal places. One value per line.
+* `Pressure_As_kPa.txt` is where the final pressure values in kPa are to be written to, at the precision of 2 decimal places. One value per line.
 
 ### Pressure ADC Data Strings To Integer Conversion
 The following is how the string input is converted to a pressure voltage for use:
@@ -44,8 +44,8 @@ ScaleHigh = 68947.573 kPa
 ## What You're Going To Need
 1. A git client
 2. An IDE.
-   * Visual Studio 2022 (any edition) https://www.visualstudio.com/vs/community/
-3. .NET 7 https://www.microsoft.com/net/download/core
+   * [Visual Studio 2022](https://visualstudio.microsoft.com/vs/community/).
+3. [.NET 7](https://dotnet.microsoft.com/en-us/download)
 
 ## How To Get Started
 1. Clone this repository to your computer (https://github.com/Pacesetter/CSharp-DevTest.git)
