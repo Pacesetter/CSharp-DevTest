@@ -54,5 +54,5 @@ ScaleHigh = 68947.573 kPa
 1. Clone this repository to your computer (https://github.com/Pacesetter/CSharp-DevTest.git)
 2. Open the project in Visual Studio 2022
 3. This should kick off a `dotnet restore` automatically, but if not manually run that in a command prompt
-4. Use 'Pressure_As_ADC_Data_Strings.txt' and the above instructions as a starting point.
+4. Use `Pressure_As_ADC_Data_Strings.txt` and the above instructions as a starting point.
 5. When you're done, submit your code by zipping up your entire solution, and email it to me.
