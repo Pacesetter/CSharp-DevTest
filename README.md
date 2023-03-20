@@ -13,11 +13,11 @@ The task is to write a clean, easy-to-read console application. This console app
 ### Pressure ADC Data Strings To Integer Conversion
 The following is how the string input is converted to a pressure voltage for use:
 
-String input is 7 characters:  \<SEQUENCE NUMBER\>\<20 BIT PRESSURE DATA AS 5 CHARACTERS\>\<CR\>
+String input is 7 characters:  \<SEQUENCE NUMBER\>\<20 BIT PRESSURE DATA AS 5 CHARACTERS\>\<\r\>
 
-So, if the string value is 0FFFF, and the Sequence Number is 0, the output is 00FFFFCR
+So, if the string value is 0FFFF, and the Sequence Number is 0, the output is 00FFFF\r
 
-So, data range is: X00000CR – XFFFFFCR
+So, data range is: X00000\r – XFFFFF\r
 
 Where X is the Sequence Number in the range {0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F}
 
