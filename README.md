@@ -12,6 +12,7 @@ The task is to write a clean, easy-to-read console application. This console app
 The following is how the string input is converted to a pressure voltage for use:
 
 String input is 7 characters:  \<SEQUENCE NUMBER\>\<20 BIT PRESSURE DATA AS 5 CHARACTERS\>\<CR\>
+
 So, if the string value is 0FFFF, and the Sequence Number is 0, the output is 00FFFFCR
 So, data range is:
 X00000CR – XFFFFFCR
@@ -21,7 +22,7 @@ When converting the HEX pressure reading to a voltage, remove the Sequence Numbe
 ### Pressure Integer Data To Voltage Conversion Formula
 Once converted to an integer, conversion to a voltage uses the following formula:
 ```
-PressureAsVoltage = (PressureAsInt \* (RawHighVoltage - RawLowVoltage) / ScaleHighAsInt) - VoltageOffset
+PressureAsVoltage = (PressureAsInt * (RawHighVoltage - RawLowVoltage) / ScaleHighAsInt) - VoltageOffset
 Formula values being:
 RawLowVoltage = 0.0 V
 RawHighVoltage = 5.0 V
@@ -33,7 +34,7 @@ VoltageOffset = 0.0 V
 
 ### Pressure Raw Voltage to Pressure (kPa) Reading Formula
 ```
-Pressure = ((RawVoltage - RawLowVoltage) / (RawHighVoltage - RawLowVoltage)) \* (ScaleHigh - ScaleLow)
+Pressure = ((RawVoltage - RawLowVoltage) / (RawHighVoltage - RawLowVoltage)) * (ScaleHigh - ScaleLow)
 Formula values being:
 RawLowVoltage = 0.0 V
 RawHighVoltage = 5.0 V
@@ -51,5 +52,5 @@ ScaleHigh = 68947.573 kPa
 1. Clone this repository to your computer (https://github.com/Pacesetter/CSharp-DevTest.git)
 2. Open the project in Visual Studio 2022
 3. This should kick off a `dotnet restore` automatically, but if not manually run that in a command prompt
-4. Use Pressure_As_ADC_Data_Strings.txt and the above instructions as a starting point.
+4. Use 'Pressure_As_ADC_Data_Strings.txt' and the above instructions as a starting point.
 5. When you're done, submit your code by zipping up your entire solution, and email it to me.
