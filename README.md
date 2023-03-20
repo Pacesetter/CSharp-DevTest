@@ -14,9 +14,11 @@ The following is how the string input is converted to a pressure voltage for use
 String input is 7 characters:  \<SEQUENCE NUMBER\>\<20 BIT PRESSURE DATA AS 5 CHARACTERS\>\<CR\>
 
 So, if the string value is 0FFFF, and the Sequence Number is 0, the output is 00FFFFCR
-So, data range is:
-X00000CR – XFFFFFCR
+
+So, data range is: X00000CR – XFFFFFCR
+
 Where X is the Sequence Number in the range {0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F}
+
 When converting the HEX pressure reading to a voltage, remove the Sequence Number from the pressure string input before converting it to an integer.
 
 ### Pressure Integer Data To Voltage Conversion Formula
