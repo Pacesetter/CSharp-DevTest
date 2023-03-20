@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ConsoleApp1/FormulaValues.cs
+/ConsoleApp1/PressureConverter.cs
+/ConsoleApp1/PressureWriter.cs
+/ConsoleApp1/PressureReader.cs
+/.vs
+/ConsoleApp1/bin/Debug/net7.0
+/ConsoleApp1/obj
